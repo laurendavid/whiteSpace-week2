@@ -1,0 +1,70 @@
+header.bigHeader2 {
+	background-image: url("../images/contact.png");
+	background-repeat: no-repeat;
+	background-position: center top;
+	background-size: cover;
+}
+
+// Meta Bar
+ul.headerPrefStyled {
+	margin-left: 0rem;
+	padding: 0 0 0 1.6rem;
+}
+
+.headerPrefStyled p {
+	float: left;
+	font-size: 1.2rem;
+	line-height: 1.1;
+	margin: 0;
+	font-style: normal;
+	color: $white;
+}
+
+li.shopCart p {
+	text-transform: uppercase;
+	margin-top: -0.25rem;
+  padding-right: 1.2rem;
+}
+
+h1.styled {
+	font-family: 'Raleway', sans-serif;
+}
+
+// Get In Touch 
+main.touch {
+	width: 100%;
+	padding-top: 3rem;
+}
+
+// Contact Form
+.contactForm2 {
+	width: 70%;
+	float: left;
+	text-align: left;
+}
+
+// Contact Info
+.contactInfo3 {
+	width: 25%;
+	float: left;
+	text-align: left;
+	margin-left: 3rem;
+}
+
+.connect2 {
+	border-bottom: 0;
+}
+
+.connect2 a, p.deetsRestyled {
+	color: $medGrey;
+}
+
+.contactInfo3 p.what {
+	color: $faqLightGrey;
+	font-size: 1.4;
+}
+
+.imageWrap {
+	clear: both;
+	padding: 5rem 0;
+}

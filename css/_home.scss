@@ -1,0 +1,435 @@
+header.bigHeader {
+	height: 100vh;
+	color: $white;
+	background-image: url('../images/hero.png');
+	background-repeat: no-repeat;
+	background-position: 50 75;
+	background-size: cover;
+}
+
+.logo {
+	padding: 2rem;
+	float: left;
+}
+
+// Navigation
+nav {
+	float: left;
+	width: 65%;
+}
+
+nav ul li {
+	float: left;
+	margin-top: 1rem;
+}
+
+nav ul li a {
+	padding: 1rem;
+	font-size: 1.3rem;
+}
+
+ul.headerPreferences {
+  width: 15%;
+  float: left;
+  margin: 3rem 0 0 9rem;
+  padding: 0 0 0 9.5rem;
+}
+
+ul.headerPreferences li {
+	float: left;
+	padding: 0.4rem;
+}
+
+.fa {
+	font-size: 1.3rem;
+}
+
+select.styled {
+	-webkit-appearance: none;
+	background: transparent;
+	outline: 0;
+	border: 0;
+	color: $white;
+	text-transform: uppercase;
+	font-size: 120%; // Default select font-size is 100%
+}
+
+// Removing default select option dropdown list styling
+.styled:focus option {
+	background: lighten($black, 30%);
+	border: 1px solid $white;
+}
+
+.fa-search {
+	font-size: 1.3rem;
+	color: $white;
+	margin: 0 0 0.8rem 1rem;
+}
+
+// Side Navigation
+nav.sideNav {
+	width: 10%;
+	position: fixed;
+	top: 50%;
+	right: -1%;
+	margin: 0;
+	padding: 0;
+	ul li {
+		float: none;
+		display: block;
+	}
+		a {
+			padding: 0;
+		}
+		.fa-minus {
+			font-size: 1rem;
+			margin: 0;
+			color: $transparentBlack;
+			&:hover {
+				color: $yellow;
+			}
+		}
+}
+
+h3.specialBig {
+	font-size: 2rem;
+	padding: 34rem 0 0 0;
+	line-height: 1.5;
+	font-weight: 300;
+}
+
+// Yellow Button
+a.info {
+	background-color: $yellow;
+	padding: 1rem 2.5rem;
+	font-size: 1.2rem;
+}
+
+.arrowWrap {
+	display: block;
+	margin: 20rem auto 0 auto;
+}
+
+// Title div inside each section
+
+.title {
+	width: 70%;
+	margin: 0 auto 5rem auto;
+	text-align: center;
+}
+
+img.waves {
+	margin: 1rem 0 1.5rem 0;
+}
+
+.title p {
+	padding: 0 6rem;
+}
+
+// PORTFOLIO
+
+section.portfolio {
+	clear: both;
+	padding: 3rem 0;
+	background-color: $white;
+}
+
+// Flickity Gallery
+
+.slider {
+	position: relative;
+}
+
+.gallery-cell {
+	width: 1170px;
+}
+
+.gallery-cell img {
+	max-width: 100%;
+	display: block;
+}
+
+// square button
+.flickity-prev-next-button {
+  width: 5rem;
+  height: 5rem;
+  border-radius: 0.5rem;
+  background: transparent;
+  border: 2px solid $white;
+}
+
+// arrow colour
+.flickity-prev-next-button .arrow {
+  fill: white;
+  margin: 0 1rem;
+}
+
+.flickity-prev-next-button:hover {
+  background: $transparentBlack;
+}
+
+/* position outside */
+.flickity-prev-next-button.previous {
+  left: 3rem;
+}
+.flickity-prev-next-button.next {
+  right: 3rem;
+}
+
+.caption {
+	display: none;
+	text-align: left;
+	position: absolute;
+	bottom: 0;
+	left: 2rem;
+}
+
+.slider:hover .caption {
+	display: block;
+}
+
+h4.fancy {
+	font-family: 'Raleway', sans-serif;
+	color: $white;
+	margin: 0;
+	font-size: 1.8rem;
+}
+
+p.captionTiny {
+	color: $white;
+	font-size: 1.2rem;
+	margin-top: 0;
+	line-height: 1.67;
+} 
+
+p.line {
+	font-family: 'Open Sans';
+	color: $medGrey;
+	text-transform: uppercase;
+	font-style: normal;
+	font-size: 1.6rem;
+	font-weight: 600;
+	line-height: 1.6;
+	margin-top: 4rem;
+	position: relative;
+}
+
+p.line::before {
+	content: "";
+	display: block;
+	width: 4rem;
+	height: 0.1rem;
+	background-color: $medGrey;
+	position: absolute;
+	bottom: 1rem;
+  left: 48rem;
+}
+
+// TESTIMONIALS
+
+section.testimonials {
+	width: 100%;
+	margin: 2rem 0 6rem 0;
+	background-color: #ffffff;
+}
+
+.testimonialsText {
+	width: 50%;
+	float: left;
+	text-align: center;
+	padding: 10rem 8rem 12rem 8rem;
+}
+
+h3.special {
+	font-family: 'Damion', cursive;
+	margin: 0;
+	font-size: 2.5rem;
+	letter-spacing: 0.3rem;
+	line-height: 2.4;
+}
+
+h2.largerHeader {
+	font-size: 2.5rem;
+	margin-top: 0;
+	line-height: 1.66;
+}
+
+img.ryan {
+	margin-top: 2rem;
+}
+
+// Ryan's name
+p.name {
+	text-transform: uppercase;
+	font-style: normal;
+	font-size: 1.3rem;
+	font-weight: 600;
+	margin-bottom: 0.5rem;
+	letter-spacing: 0.2rem;
+}
+
+// Job Title
+p.verySmall {
+	font-size: 1.2rem;
+	margin: 0;
+	line-height: 1.67;
+}
+
+.testimonialsImage {
+	width: 50%;
+	float: left;
+}
+
+.testimonialsImage img {
+	max-width: 100%;
+	display: block;
+}
+
+// SERVICES
+
+section.services {
+	background-color: $white;
+}
+
+// Services gallery
+ul.serviceGallery {
+	margin: 0;
+	padding: 0;
+}
+
+li.galleryItem {
+	list-style-type: none;
+	width: 33.333%;
+	// float: left;
+	padding: 10px;
+	position: relative;
+}
+
+li.galleryItem img {
+	width: 100%;
+	display: block;
+}
+
+p.overlay {
+	color: #ffffff;
+	font-size: 1.5rem;
+	font-style: normal;
+	text-transform: uppercase;
+	background: rgba(0,0,0,0.5);
+	margin: 0;
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	bottom: 10px;
+	left: 10px;
+	padding-top: calc(50% - (1.5rem * 2)); //To compensate for font size of 1.5rem and p line height of 1.5rem
+	display: none;
+}
+
+.galleryItem:hover .overlay {
+	display: block;
+}
+
+// HOME footer
+.homeFooter {
+	margin-top: 6rem;
+	max-width: 100%;
+}
+
+.inTouch {
+	width: 50%;
+	float: left;
+	padding: 15rem 11rem;
+}
+
+// Home Form
+.homeForm {
+	text-align: left;
+}
+
+.homeForm input {
+	outline: 0;
+	border: 2px solid $black;
+	padding: 1rem 0;
+	text-transform: uppercase;
+	font-size: 1.3rem;
+	line-height: 1.5;
+}
+
+.homeForm input[type=email] {
+	width: 75%;
+	border-right: 0;
+	border-left: 0;
+	margin-right: 1rem;
+}
+
+.homeForm input[type=submit] {
+	width: 20%;
+	text-align: center;
+	background-color: $white;
+	color: $medGrey;
+}
+
+.homeForm input[type=submit]:hover {
+	color: $yellow;
+}
+
+// Address, Phone, Email, Social Icons - list items
+.contactInfo {
+	text-align: left;
+	padding: 0;
+}
+
+.contactInfo li:not(.socialIcons) {
+	padding: 0 3.5rem 0 0;
+}
+
+.contactInfo p {
+	color: $lightGrey;
+}
+
+p.details {
+	float: left;
+	font-weight: 400;
+	color: $medGrey;
+	font-style: normal;
+}
+
+p.details a {
+	color: $medGrey;
+	font-size: 1.4rem;
+	text-transform: lowercase;
+	line-height: 1.5;
+	padding-left: 2.5rem;
+}
+
+ul.social {
+	float: left;
+	position: relative;
+	top: 1.7rem;
+  left: 0rem;
+}
+
+// Font Awesome Social Icons
+ul.social .fa {
+	padding: 0.2rem;
+	font-size: 1.5rem;
+	line-height: 2.3;
+	font-weight: 400;
+}
+
+ul.social .fa:hover {
+	color: $yellow;
+}
+
+// FOOTER IMAGE
+
+.footerImage {
+	width: 50%;
+	float: left;
+}
+
+.footerImage img {
+	max-width: 100%;
+	display: block;
+}

@@ -1,0 +1,82 @@
+html {
+	font-size: 62.5%;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	font-size: 1rem;
+}
+
+.mainWrapper, .innerWrapper {
+	margin: 0 auto;
+	text-align: center;
+}
+
+.mainWrapper {
+	max-width: 100%;
+}
+
+.innerWrapper {
+	max-width: 1170px;
+}
+
+h1 {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 4.5rem;
+	text-transform: uppercase;
+	letter-spacing: 0.25rem;
+	margin-top: 0;
+	line-height: 1.2;
+	font-weight: 300;
+}
+
+a {
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 1.3rem;
+	color: $white;
+	display: inline-block;
+	line-height: 1.8;
+}
+
+h2 {
+	font-family: 'Raleway', sans-serif;
+	font-size: 3rem;
+	text-transform: uppercase;
+	padding: 0 0 1.5rem 0;
+	letter-spacing: 0.4rem;
+	line-height: 0.67;
+}
+
+p {
+	font-family: 'Open Sans', sans-serif;
+	font-style: italic;
+	font-size: 1.4rem;
+	margin: 2.5rem 0;
+	line-height: 1.5;
+	color: $medGrey;
+}
+
+h4 {
+	font-size: 1.5rem;
+	font-family: 'Open Sans', sans-serif;
+	text-transform: uppercase;
+	color: $greyBlack;
+	line-height: 1.6;
+}
+
+ul {
+	padding: 0;
+}
+
+li {
+	list-style: none;
+	float: left;
+}
+
+
+
+
+
+

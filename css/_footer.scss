@@ -1,0 +1,116 @@
+// FAQ & CONTACT FOOTER
+
+.wideFooter {
+	clear: both;
+	max-width: 100%;
+	background-color: lighten($black, 10%);
+	padding: 2rem 0 0 0;
+	font-style: normal;
+}
+
+.innerFooter {
+	width: 100%;
+}
+
+.footerDivs {
+	width: calc(24% - 3rem);
+	display: inline-block;
+	margin-right: 3rem;
+	padding-bottom: 3rem;
+}
+
+.footerDivs h4 {
+	color: $lightGrey;
+}
+
+.footerDivs p {
+	color: $lightGrey;
+}
+
+// Contact Info
+
+.connect {
+	width: 100%;
+	border-bottom: 1px solid darken($lightGrey, 60%);
+}
+
+h4.squish {
+	margin-bottom: 0;
+}
+
+.connect p {
+	float: left;
+	line-height: 1.4;
+	color: $faqLightGrey;
+  font-size: 1.3rem;
+  margin: 1.4rem 0;
+}
+
+.connect a {
+	text-transform: lowercase;
+	margin-left: 2rem;
+	color: $faqLightGrey;
+}
+
+p.what {
+	font-style: italic;
+	margin-right: 3rem;
+	font-size: 1.2rem;
+	color: darken($faqLightGrey, 5%);
+}
+
+p.deets {
+	float: left;
+	font-style: normal;
+	line-height: 1.7rem;
+}
+
+p.deets2 {
+	margin-left: 1rem;
+}
+
+ul.social2 {
+	top: 0;
+  left: -0.8rem;
+  margin: 0.3rem 0 0 0;
+}
+
+.socIcons2 {
+	color: $lightGrey;
+	padding-right: 0.2rem;
+}
+
+// Popular Tags - style change
+
+.popTagsStyled a {
+	background-color: darken($medGrey, 20%);
+}
+// Recent Posts
+
+p.highlightText2 {
+	color: $white;
+	font-style: normal;
+}
+
+p.tiny2 {
+	color: $medGrey;
+}
+
+// Copyright Div
+
+.copyright {
+	clear: both;
+	max-width: 100%;
+	background-color: lighten($transparentBlack, 8%);
+	border-top: 1px solid $transparentBlack;
+}
+
+.copyright p {
+	float: left;
+	font-style: normal;
+}
+
+p.theme {
+	margin-left: 46rem;
+}
+

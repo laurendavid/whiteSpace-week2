@@ -1,0 +1,346 @@
+.metaBar {
+	max-width: 100%;
+}
+
+ul.metaBarDetails {
+	width: 75%;
+	float: left;
+}
+
+ul.preferences {
+	width: 25%;
+	float: left;
+}
+
+ul.metaBarDetails li, ul.preferences li {
+	padding-right: 3rem;	
+}
+
+ul.metaBarDetails li p, ul.preferences li p {
+	margin: 0;
+	padding: 0;
+	font-size: 1.2rem;
+	line-height: 1.75; 
+	font-style: normal;
+}
+
+.fa {
+	margin-right: 0.3rem;
+}
+
+.fa-shopping-cart {
+	margin-top: 0.3rem;
+}
+
+.faqWrapper { 
+	text-align: left;
+	margin: 0 auto;
+	max-width: 1170px;
+}    
+
+// Black Logo
+
+img.blackLogo {
+	float: left;
+	padding: 1rem 0;
+}
+
+nav.secondaryNav {
+	float: left;
+	width: 80%;
+	padding: 0 0 2rem 53rem;
+}
+
+.secondaryNav li {
+	margin-top: 0;
+}
+
+.secondaryNav li:last-child {
+	margin-left: 0.9rem;
+}
+
+.secondaryNav a {
+	color: $medGrey;
+	margin-top: 0rem;
+}
+
+.search2 {
+	color: $medGrey;
+	margin: 1.3rem 0 0 1rem;
+}
+
+
+// Page title div
+.title {
+	clear: both;
+}
+
+h1.smallerSize {
+	font-family: 'Raleway', sans-serif;
+	font-size: 4rem;
+	font-weight: 600;
+	margin-top: 10rem;
+	letter-spacing: 0.4rem;
+	line-height: 1.25;
+}
+
+main p {
+	font-style: normal;
+}
+
+section.overview {
+	width: 70%;
+	float: left; 
+}
+
+.overview img {
+	max-width: 100%;
+	display: block;
+}
+
+// Show-hide 
+.accordian {
+	margin: 4rem 0;
+}
+
+summary {
+	padding: 1rem 2rem;
+	border: 2px solid $black;
+	margin: 1rem 0;
+	text-transform: uppercase;
+	font-size: 1.5rem;
+	font-weight: 700;
+}
+
+/* This hides the default arrow that appears in the summary */
+summary::-webkit-details-marker {
+	display: none;
+}
+
+details summary::after {
+  content: '+';
+  width: 1rem;
+  display: inline-block;
+  float: right;
+}
+
+details[open] summary::after {
+  content: '-';
+}
+
+.accordian p {
+	padding: 0 1.5rem;
+}
+
+// Contact Form - FAQ & Contact 
+
+.contactForm {
+	clear: both;
+	width: 100%
+}
+
+.contactForm input:not(.sendButton), .contactForm textarea {
+	-webkit-appearance: none;
+	outline: 0;
+	border: 0;
+	border-bottom: 2px solid $black;
+	text-transform: uppercase;
+	font-size: 1.2rem;
+	color: $lightGrey;
+	padding: 0 1rem 1rem 0;
+}
+
+.contactForm input[type=text], .contactForm input[type=email] {
+	width: calc(50% - 1rem);
+	margin-right: 1rem;
+	float: left;
+}
+
+.contactForm input[type=email] {
+	margin-right: 0;
+}
+
+.contactForm textarea {
+	clear: both;
+	width: 100%;
+	height: 2rem;
+	margin-top: 6rem;
+	padding-bottom: 0.5rem;
+}
+
+.contactForm .sendButton {
+	width: 25%;
+	padding: 1rem;
+	border: 2px solid $black;
+	margin-top: 3rem;
+	font-size: 1.3rem;
+	line-height: 1.6;
+	font-weight: 600;
+	background-color: $white;
+	text-transform: uppercase;
+	color: $black;
+}
+
+.contactForm .sendButton:hover {
+	color: $yellow;
+}
+
+// ASIDE
+
+aside {
+	width: 30%;
+	float: left;
+	padding: 0 3rem;
+}
+
+form.searchForm {
+	position: relative;
+}
+
+input.faqSearch {
+	width: 95%;
+	-webkit-appearance: none;
+	outline: 0;
+	border: 2px solid $black;
+	border-right: 0;
+	border-left: 0;
+	text-transform: uppercase;
+	font-size: 1.2rem;
+	color: $lightGrey;
+	padding: 1rem;
+	margin-bottom: 2rem;
+}
+
+.searchIcon {
+	font-size: 1.3rem;
+	color: $lightGrey;
+	position: absolute;
+	top: 22%;
+	right: 0;
+}
+
+// Popular Posts
+
+.posts {
+	width: 100%;
+	padding-bottom: 2rem;
+}
+
+.thumbnail {
+	width: 25%;
+	float: left;
+	position: relative;
+}
+
+.thumbnail img {
+	max-width: 100%;
+	display: block;
+}
+
+.thumbnail::after {
+	content: '';
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 60px;
+	height: 60px;
+	background: linear-gradient(to bottom, rgba(241,231,103,1) 0%, rgba(254,182,69,0.16) 100%);
+	opacity: 0;
+}
+
+.thumbnail:hover::after {
+	opacity: 0.7;
+}
+
+.postsText {
+	float: left;
+	margin: 0;
+	padding-left: 1.5rem;
+}
+
+.postsText p {
+	margin: 0;
+}
+
+p.highlightText {
+	font-size: 1.4;
+	line-height: 1.7;
+	color: $medGrey;
+}
+
+.postsText p.highlightText:hover {
+	color: $yellow;
+}
+
+p.tiny {
+	font-size: 1.2rem;
+	color: $faqLightGrey;
+	line-height: 1.6;
+	font-style: italic;
+}
+
+// Popular Tags
+
+.popTags li {
+	padding: 0.5rem;
+}
+
+.popTags a {
+	color: $faqLightGrey;
+	text-transform: lowercase;
+	color: $faqLightGrey;
+	font-size: 1.3rem;
+	font-style: italic;
+	line-height: 1.5;
+	padding: 0.5rem;
+	background-color: $white;
+}
+
+.popTags li:hover a {
+	color: #ffffff;
+	background-color: $yellow;
+}
+
+.banner {
+	width: 100%;
+	margin: 2rem 0 4rem 0;
+}
+
+.banner img {
+	max-width: 100%;
+	display: block;
+}
+
+.instaWidget {
+	clear: both;
+	width: 100%;
+	margin-top: 2.8rem;
+}
+
+h4.fancy2 {
+	font-family: 'Raleway', sans-serif;
+	color: $medGrey;
+	margin: 2.5rem 0;
+}
+
+.insta li {
+	width: 25%;
+	padding: 0 0.6rem 0.6rem 0;
+}
+
+.insta img {
+	max-width: 100%;
+	display: block;
+}
+
+// Text Widget 
+
+.textWidget {
+	padding: 0 0 3rem 0;
+}
+
+.textWidget p {
+	margin-top: 0;
+}
+
