@@ -15,7 +15,12 @@
 		<header class="bigHeader bigHeader2">
 			<!-- Logo -->
 			<img class="logo" src="assets/home-logo.png" alt="White Space logo">
-			<nav>
+			<!--HAMBURGER-->
+			<section class="hamburger">
+				<button class="hamburgerIcon">&#9776;</button>
+			</section>
+			<nav class="mainNav">
+				<i class="fa fa-times-circle"></i>
 				<ul class="clearfix">
 					<li><a href="index.html">Home</a></li>
 					<li><a href="faq.html">FAQ</a></li>
@@ -25,20 +30,22 @@
 				</ul>
 			</nav>
 			<!-- Shopping cart, Language preference, Search -->
-			<ul class="headerPreferences headerPrefStyled clearfix">
-				<li class="shopCart"><p><i class="fa fa-shopping-cart"></i>$80.00(2 items)</p></li>
-				<li><p><i class="fa fa-globe"></i></p></li>
-				<li>
-					<form action="" method="GET">
-						<select name="language" class="styled">>
-						  <option value="English">ENG</option>
-						  <option value="French">FR</option>
-						  <option value="Spanish">SP</option>
-						</select>
-					</form>
-				</li>	
-				<li><p><i class="fa fa-search"></i></p></li>
-			</ul>
+			<div class="metaPreferences">
+				<ul class="headerPreferences headerPrefStyled clearfix">
+					<li class="shopCart"><p><i class="fa fa-shopping-cart"></i>$80.00(2 items)</p></li>
+					<li><p><i class="fa fa-globe"></i></p></li>
+					<li>
+						<form action="" method="GET">
+							<select name="language" class="styled">>
+							  <option value="English">ENG</option>
+							  <option value="French">FR</option>
+							  <option value="Spanish">SP</option>
+							</select>
+						</form>
+					</li>	
+					<li><p><i class="fa fa-search"></i></p></li>
+				</ul>
+			</div>
 			<div class="innerWrapper">
 				<h3 class="special specialBig">Let's Talk</h3>
 				<h1 class="styled">We Are Always Open For You</h1>
@@ -127,7 +134,7 @@
 				</div>
 			</div>
 			<!-- Instagram Widget -->
-			<div class="instaWidget footerDivs clearfix">
+			<div class="footerDivs clearfix">
 				<h4 class="fancy2">Follow On Instagram</h4>
 				<ul class="insta clearfix">
 					<li>
@@ -257,13 +264,6 @@
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 	<!-- smooth-scroll -->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-smooth-scroll/1.7.2/jquery.smooth-scroll.min.js"></script>
-	<script>
-		$(function() {
-			$('nav a, a').smoothScroll({
-				offset: -10,
-				speed: 1000
-			});	
-		});	
-	</script>	
+	<script src="js/main.js"></script>	
 </body>
 </html>

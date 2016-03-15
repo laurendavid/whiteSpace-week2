@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>WhiteSpace</title>
 	<!-- Google Fonts -->
 	<link href='https://fonts.googleapis.com/css?family=Damion|Raleway:400,700|Open+Sans' rel='stylesheet' type='text/css'>
@@ -18,7 +19,12 @@
 			<!-- White Logo -->
 			<img class="logo" src="assets/home-logo.png" alt="White Space logo">
 			<!-- Main Nav Bar -->
-			<nav>
+			<!--HAMBURGER-->
+			<section class="hamburger">
+				<button class="hamburgerIcon">&#9776;</button>
+			</section>
+			<nav class="mainNav">
+				<i class="fa fa-times-circle"></i>
 				<ul class="clearfix">
 					<li><a href="index.html">Home</a></li>
 					<li><a href="faq.html">FAQ</a></li>
@@ -207,19 +213,17 @@
 	<!-- flickity -->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/flickity/1.1.2/flickity.pkgd.min.js"></script>
 	<script>
-		$(function() {
-			$('nav a, a').smoothScroll({
-				offset: -10,
-				speed: 1000
-			});
+		$(function(){
+			// FLICKITY GALLERY
 			$(".gallery").flickity({
 				wrapAround: true, 
 				freeScroll: true,
-				autoPlay: 2500,
+				autoPlay: '3500',
 				pageDots: false
-			});	
-		});	
+			});
+		});
 	</script>
+	<script src="js/main.js"></script>
 </body>
 </html>
 

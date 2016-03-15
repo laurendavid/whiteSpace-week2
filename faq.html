@@ -15,25 +15,28 @@
 		<ul class="metaBarDetails clearfix">
 			<li><p><i class="fa fa-phone"></i>+1 (800) 456 37 96</p></li>
 			<li><p><i class="fa fa-envelope"></i>email@gt3themes.com</p></li>
-		</ul>
-		<ul class="preferences clearfix">
-			<li><p><i class="fa fa-sign-in"></i>Login</p></li>
-			<li><p><i class="fa fa-shopping-cart"></i>$80.00(2 items)</p></li>
-			<li><p><i class="fa fa-globe"></i>Eng</p></li>
+			<li class="preferences"><p><i class="fa fa-sign-in"></i>Login</p></li>
+			<li class="preferences"><p><i class="fa fa-shopping-cart"></i>$80.00(2 items)</p></li>
+			<li class="preferences"><p><i class="fa fa-globe"></i>Eng</p></li>
 		</ul>
 	</div>
 	<div class="innerWrapper faqWrapper">
 		<header>
 			<!-- Black logo -->
 			<img class="blackLogo" src="assets/faq_logo_black.png" alt="Black logo">
-			<nav class="secondaryNav">
+			<!--HAMBURGER-->
+			<section class="hamburger">
+				<button class="hamburgerIcon">&#9776;</button>
+			</section>
+			<nav class="mainNav secondaryNav">
+				<i class="fa fa-times-circle"></i>
 				<ul class="clearfix">
 					<li><a href="index.html">Home</a></li>
 					<li><a href="faq.html">FAQ</a></li>
 					<li><a href="index.html#portfolio">Portfolio</a></li>
 					<li><a href="index.html#serv">Services</a></li>
 					<li><a href="contact.html">Contact</a></li>
-					<li><i class="fa fa-search search2"></i></li>
+					<li class="search"><i class="fa fa-search search2"></i></li>
 				</ul>
 			</nav>
 		</header>
@@ -246,7 +249,7 @@
 				</div>
 			</div>
 			<!-- Instagram Widget -->
-			<div class="instaWidget footerDivs clearfix">
+			<div class="footerDivs clearfix">
 				<h4 class="fancy2">Follow On Instagram</h4>
 				<ul class="insta clearfix">
 					<li>
@@ -376,13 +379,6 @@
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 	<!-- smooth-scroll -->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-smooth-scroll/1.7.2/jquery.smooth-scroll.min.js"></script>
-	<script>
-		$(function() {
-			$('nav a').smoothScroll({
-				offset: -50,
-				speed: 1000
-			});	
-		});	
-	</script>
+	<script src="js/main.js"></script>
 </body>
 </html>

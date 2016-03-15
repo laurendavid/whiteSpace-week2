@@ -7,8 +7,8 @@ header.bigHeader2 {
 
 // Meta Bar
 ul.headerPrefStyled {
-	margin-left: 0rem;
-	padding: 0 0 0 1.6rem;
+	float: right;
+	width: 25%;
 }
 
 .headerPrefStyled p {
@@ -34,6 +34,9 @@ h1.styled {
 main.touch {
 	width: 100%;
 	padding-top: 3rem;
+	@media (max-width: 940px) {
+		padding: 3%;
+	}
 }
 
 // Contact Form
@@ -41,6 +44,13 @@ main.touch {
 	width: 70%;
 	float: left;
 	text-align: left;
+	@media (max-width: 940px) {
+		width: 100%;
+		padding: 3%;
+		form {
+			padding: 3%;
+		}
+	}
 }
 
 // Contact Info
@@ -49,6 +59,9 @@ main.touch {
 	float: left;
 	text-align: left;
 	margin-left: 3rem;
+	@media (max-width: 940px) {
+		display: none;
+	}
 }
 
 .connect2 {
@@ -67,4 +80,11 @@ main.touch {
 .imageWrap {
 	clear: both;
 	padding: 5rem 0;
+	img {
+		max-width: 100%;
+		display: block;
+	}
+	@media (max-width:940px) {
+		padding: 5%;
+	}
 }

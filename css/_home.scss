@@ -5,6 +5,9 @@ header.bigHeader {
 	background-repeat: no-repeat;
 	background-position: 50 75;
 	background-size: cover;
+	@media (max-width: 600px) {
+		padding: 0 3%;
+	}
 }
 
 .logo {
@@ -13,37 +16,116 @@ header.bigHeader {
 }
 
 // Navigation
-nav {
-	float: left;
-	width: 65%;
+.hamburger {
+	.hamburgerIcon {
+	  display: none;
+	  background: none;
+	  position: fixed;
+	  top: 0;
+	  right: 0;
+	  line-height: 45px;
+	  padding: 2% 3%;
+	  color: $faqLightGrey;
+	  border: 0;
+	  font-size: 3.5rem;
+	  font-weight: bold;
+	  cursor: pointer;
+	  outline: none;
+	  z-index: 5;
+	  transition: all 0.45s ease-in-out; }
+	  &:hover {
+	    color: $medGrey;
+	    text-shadow: -1px 1px 10px $faqLightGrey; 
+	}
 }
 
-nav ul li {
+@media all and (max-width: 940px) {
+	.hamburger .hamburgerIcon {
+		display: inline-block;
+	}
+}
+
+.mainNav {
+	float: left;
+	width: 50%;
+	@media (max-width: 940px) {
+		display: none;
+		width: 100vw;
+		height: 100vh;
+		position: fixed;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		padding: 1% 2%;
+		z-index: 10;
+		background: darken($greyBlack, 5%);
+		ul {
+			width: 100%;
+		}
+	}
+}
+
+.fa-times-circle {
+	display: none;
+	font-size: 4rem;
+	color: white;
+	margin: 1rem;
+	cursor: pointer;
+	transition: all 0.45s ease-in-out; 
+	&:hover {
+	  color: $yellow;
+	  text-shadow: -1px 1px 10px $faqLightGrey; 
+	}
+	@media all and (max-width: 940px) {
+		display: inline-block;
+		position: fixed;
+		top: 9px;
+		right: 15px;
+	}
+}
+
+.mainNav ul li {
 	float: left;
 	margin-top: 1rem;
-}
-
-nav ul li a {
-	padding: 1rem;
-	font-size: 1.3rem;
+	a {
+		font-size: 1.4rem;
+		padding: 1rem;
+		&:hover {
+			color: $yellow;
+		}
+	}
+	@media (max-width: 940px) {
+		width: 100%;
+		padding: 3%;
+		border-bottom: 2px solid $faqLightGrey;
+		a {
+			font-size: 3rem;
+			letter-spacing: 4px;
+			&:hover {
+				color: $yellow;
+			}
+		}
+	}
 }
 
 ul.headerPreferences {
   width: 15%;
-  float: left;
-  margin: 3rem 0 0 9rem;
-  padding: 0 0 0 9.5rem;
+  float: right;
+  margin-top: 3rem;
+  @media (max-width: 940px) {
+  	display: none;
+  }
+	li {
+		float: left;
+		padding: 0.4rem;
+	}
+	.fa {
+		font-size: 1.4rem;
+	}
 }
 
-ul.headerPreferences li {
-	float: left;
-	padding: 0.4rem;
-}
-
-.fa {
-	font-size: 1.3rem;
-}
-
+// Language dropdown list
 select.styled {
 	-webkit-appearance: none;
 	background: transparent;
@@ -56,8 +138,9 @@ select.styled {
 
 // Removing default select option dropdown list styling
 .styled:focus option {
-	background: lighten($black, 30%);
-	border: 1px solid $white;
+	background: lighten($greyBlack, 15%);
+	border: 1px solid $greyBlack;
+	outline: 0;
 }
 
 .fa-search {
@@ -74,21 +157,24 @@ nav.sideNav {
 	right: -1%;
 	margin: 0;
 	padding: 0;
+	@media (max-width: 940px) {
+		display: none;
+	}
 	ul li {
 		float: none;
 		display: block;
 	}
-		a {
-			padding: 0;
+	a {
+		padding: 0;
+	}
+	.fa-minus {
+		font-size: 1rem;
+		margin: 0;
+		color: $transparentBlack;
+		&:hover {
+			color: $yellow;
 		}
-		.fa-minus {
-			font-size: 1rem;
-			margin: 0;
-			color: $transparentBlack;
-			&:hover {
-				color: $yellow;
-			}
-		}
+	}
 }
 
 h3.specialBig {
@@ -96,18 +182,40 @@ h3.specialBig {
 	padding: 34rem 0 0 0;
 	line-height: 1.5;
 	font-weight: 300;
+	@media (max-width: 600px) {
+		margin: 0 0 3% 0;
+		font-size: 2rem;
+		letter-spacing: 0.3rem;
+		line-height: 1.7;
+		padding-top: 25rem;
+	}
+	@media (max-width: 480px) {
+		padding-top: 20rem;
+	}
 }
 
 // Yellow Button
 a.info {
 	background-color: $yellow;
 	padding: 1rem 2.5rem;
-	font-size: 1.2rem;
+	font-size: 1.4rem;
+	@media (max-width: 767px) {
+		font-size: 1.7rem;
+	}
+	@media (max-width: 600px) {
+		margin-top: 10%;
+	}
 }
 
 .arrowWrap {
 	display: block;
-	margin: 20rem auto 0 auto;
+	margin: 10% auto 0 auto;
+	@media (max-width: 767px) {
+		margin-top: 20%;
+	}
+	@media (max-width: 600px) {
+		display: none;
+	}
 }
 
 // Title div inside each section
@@ -116,6 +224,9 @@ a.info {
 	width: 70%;
 	margin: 0 auto 5rem auto;
 	text-align: center;
+	@media (max-width: 940px) {
+		width: 100%;
+	}
 }
 
 img.waves {
@@ -138,16 +249,23 @@ section.portfolio {
 
 .slider {
 	position: relative;
+	.gallery-cell {
+		width: 1170px;
+		img {
+		max-width: 100%;
+		display: block;
+		}
+	}
+	@media (max-width: 940px) {
+		width: 90%;
+		margin: 0 auto;
+		.gallery-cell {
+			width: 1075px;
+		}
+	}
 }
 
-.gallery-cell {
-	width: 1170px;
-}
 
-.gallery-cell img {
-	max-width: 100%;
-	display: block;
-}
 
 // square button
 .flickity-prev-next-button {
@@ -156,6 +274,11 @@ section.portfolio {
   border-radius: 0.5rem;
   background: transparent;
   border: 2px solid $white;
+  @media (max-width: 480px) {
+	width: 4rem;
+	height: 4rem;
+  	top: 95%;
+  }
 }
 
 // arrow colour
@@ -180,7 +303,7 @@ section.portfolio {
 	display: none;
 	text-align: left;
 	position: absolute;
-	bottom: 0;
+	bottom: 40px;
 	left: 2rem;
 }
 
@@ -222,7 +345,16 @@ p.line::before {
 	background-color: $medGrey;
 	position: absolute;
 	bottom: 1rem;
-  left: 48rem;
+  	left: 48rem;
+  	@media (max-width: 940px) {
+  		left: 31rem;
+  	}
+  	@media (max-width: 767px) {
+  		left: 23rem;
+  	}
+  	@media (max-width: 767px) {
+  		display: none;
+  	}
 }
 
 // TESTIMONIALS
@@ -231,6 +363,12 @@ section.testimonials {
 	width: 100%;
 	margin: 2rem 0 6rem 0;
 	background-color: #ffffff;
+	@media (max-width: 940px) {
+		margin-bottom: 3%;
+	}
+	@media (max-width: 767px) {
+		margin-top: 0;
+	}
 }
 
 .testimonialsText {
@@ -238,6 +376,11 @@ section.testimonials {
 	float: left;
 	text-align: center;
 	padding: 10rem 8rem 12rem 8rem;
+	@media (max-width: 940px) {
+		width: 100%;
+		padding: 0 5%;
+	}
+
 }
 
 h3.special {
@@ -278,6 +421,10 @@ p.verySmall {
 .testimonialsImage {
 	width: 50%;
 	float: left;
+	@media (max-width: 940px) {
+		width: 100%;
+		padding: 3% 5%;
+	}
 }
 
 .testimonialsImage img {
@@ -289,6 +436,9 @@ p.verySmall {
 
 section.services {
 	background-color: $white;
+	@media (max-width: 940px) {
+		padding: 3%;
+	}
 }
 
 // Services gallery
@@ -300,9 +450,14 @@ ul.serviceGallery {
 li.galleryItem {
 	list-style-type: none;
 	width: 33.333%;
-	// float: left;
 	padding: 10px;
 	position: relative;
+	@media (max-width: 767px) {
+		width: 50%;
+	}
+	@media (max-width: 600px) {
+		width: 100%;
+	}
 }
 
 li.galleryItem img {
@@ -334,12 +489,19 @@ p.overlay {
 .homeFooter {
 	margin-top: 6rem;
 	max-width: 100%;
+	@media (max-width: 940px) {
+		margin-top: 2%;
+	}
 }
 
 .inTouch {
 	width: 50%;
 	float: left;
 	padding: 15rem 11rem;
+	@media (max-width: 940px) {
+		width: 100%;
+		padding: 0 5%;
+	}
 }
 
 // Home Form
@@ -361,13 +523,23 @@ p.overlay {
 	border-right: 0;
 	border-left: 0;
 	margin-right: 1rem;
+	@media (max-width: 600px) {
+		width: 100%;
+		padding: 2%;
+	}
 }
 
 .homeForm input[type=submit] {
-	width: 20%;
+	padding: 2% 4%;
 	text-align: center;
 	background-color: $white;
 	color: $medGrey;
+	@media (max-width: 600px) {
+		margin: 7% 0 0 35%;
+	}
+	@media (max-width: 480px) {
+		margin: 7% 0 0 28%;
+	}	
 }
 
 .homeForm input[type=submit]:hover {
@@ -378,10 +550,23 @@ p.overlay {
 .contactInfo {
 	text-align: left;
 	padding: 0;
+	@media (max-width: 600px) {
+		ul {
+			margin: 0;
+		}
+	}
 }
 
 .contactInfo li:not(.socialIcons) {
 	padding: 0 3.5rem 0 0;
+	@media (max-width: 767px) {
+		padding: 0 2rem 0 0;
+	}
+	@media (max-width: 600px) {
+		width: 100%;
+		padding: 0;
+		text-align: center;
+	}
 }
 
 .contactInfo p {
@@ -393,6 +578,11 @@ p.details {
 	font-weight: 400;
 	color: $medGrey;
 	font-style: normal;
+	@media (max-width: 600px) {
+		margin: 0;
+		float: none;
+		text-align: center;
+	}
 }
 
 p.details a {
@@ -401,32 +591,56 @@ p.details a {
 	text-transform: lowercase;
 	line-height: 1.5;
 	padding-left: 2.5rem;
+	@media (max-width: 600px) {
+		padding-left: 0;
+	}
 }
 
 ul.social {
 	float: left;
 	position: relative;
 	top: 1.7rem;
-  left: 0rem;
+  	left: 0rem;
+  	@media (max-width: 600px) {
+  	    position: static;
+  	    width: 100%;
+  	    margin-left: 13%;
+  	}
+  	@media (max-width: 600px) {
+  	    margin-left: 9%;
+  	}
 }
 
 // Font Awesome Social Icons
 ul.social .fa {
 	padding: 0.2rem;
-	font-size: 1.5rem;
-	line-height: 2.3;
+	font-size: 1.8rem;
+	line-height: 2;
 	font-weight: 400;
+	&:hover {
+		color: $yellow;
+	}
+	@media (max-width: 767px) {
+	    padding: 0 0.6rem;
+	    font-size: 2rem;
+	    line-height: 1.8;
+	}
+	@media (max-width: 600px) {
+	    padding: 0 1rem;
+	    font-size: 2.7rem;
+	    line-height: 1.5;
+	}
 }
 
-ul.social .fa:hover {
-	color: $yellow;
-}
 
 // FOOTER IMAGE
 
 .footerImage {
 	width: 50%;
 	float: left;
+	@media (max-width: 940px) {
+		width: 100%;
+	}
 }
 
 .footerImage img {

@@ -6,6 +6,9 @@
 	background-color: lighten($black, 10%);
 	padding: 2rem 0 0 0;
 	font-style: normal;
+	@media (max-width: 940px) {
+		margin-top: 3%;
+	}
 }
 
 .innerFooter {
@@ -14,25 +17,45 @@
 
 .footerDivs {
 	width: calc(24% - 3rem);
-	display: inline-block;
+	float: left;
 	margin-right: 3rem;
 	padding-bottom: 3rem;
+	h4 {
+		color: $lightGrey;
+	}
+	p {
+		color: $lightGrey;
+	}
+	.connect {
+		border-bottom: 1px solid darken($lightGrey, 60%);
+		@media (max-width: 600px) {
+			text-align: center;
+		}
+	}
+	@media (max-width: 940px) {
+		width: calc(50% - 3rem);
+	}
+	@media (max-width: 767px) {
+		padding: 0 5%;
+		h4 {
+			font-size: 2rem;
+		}
+		p, .connect p, .connect a {
+			font-size: 1.7rem;
+			margin: 6px 0;
+			float: none;
+		}
+	}
+	@media (max-width: 600px) {
+		width: 100%;
+		padding: 0 5%;
+		text-align: center;
+	}
 }
 
-.footerDivs h4 {
-	color: $lightGrey;
-}
-
-.footerDivs p {
-	color: $lightGrey;
-}
 
 // Contact Info
 
-.connect {
-	width: 100%;
-	border-bottom: 1px solid darken($lightGrey, 60%);
-}
 
 h4.squish {
 	margin-bottom: 0;
@@ -42,14 +65,17 @@ h4.squish {
 	float: left;
 	line-height: 1.4;
 	color: $faqLightGrey;
-  font-size: 1.3rem;
-  margin: 1.4rem 0;
+  	font-size: 1.3rem;
+  	margin: 1.4rem 0;
 }
 
 .connect a {
 	text-transform: lowercase;
 	margin-left: 2rem;
 	color: $faqLightGrey;
+	@media (max-width: 767px) {
+		margin: 6px 0;
+	}
 }
 
 p.what {
@@ -71,13 +97,16 @@ p.deets2 {
 
 ul.social2 {
 	top: 0;
-  left: -0.8rem;
-  margin: 0.3rem 0 0 0;
+  	left: -0.8rem;
+  	margin: 0.3rem 0 0 0;
 }
 
 .socIcons2 {
 	color: $lightGrey;
 	padding-right: 0.2rem;
+	@media (max-width: 767px) {
+		font-size: 2.3rem;
+	}
 }
 
 // Popular Tags - style change
@@ -96,6 +125,12 @@ p.tiny2 {
 	color: $medGrey;
 }
 
+@media (max-width: 767px) {
+	.popTags.footerDivs, .popular.footerDivs {
+		display: none;
+	}
+}
+
 // Copyright Div
 
 .copyright {
@@ -103,14 +138,21 @@ p.tiny2 {
 	max-width: 100%;
 	background-color: lighten($transparentBlack, 8%);
 	border-top: 1px solid $transparentBlack;
+	p {
+		float: left;
+		font-style: normal;
+	}
+	.theme {
+		float: right;
+	}
+	@media (max-width: 767px) {
+		p, .theme {
+			float: none;
+			text-align: center;
+			margin: 0;
+		}
+	}
 }
 
-.copyright p {
-	float: left;
-	font-style: normal;
-}
 
-p.theme {
-	margin-left: 46rem;
-}
 
