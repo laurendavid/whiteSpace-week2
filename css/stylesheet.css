@@ -208,7 +208,7 @@ h1 {
 @media (max-width: 600px) {
   h1 {
     font-size: 3rem;
-    margin-top: 5%;
+    margin-top: 7%;
   }
 }
 
@@ -331,6 +331,7 @@ header.bigHeader {
   }
   .mainNav ul {
     width: 100%;
+    text-align: center;
   }
 }
 
@@ -380,6 +381,7 @@ header.bigHeader {
   .mainNav ul li a {
     font-size: 3rem;
     letter-spacing: 4px;
+    color: #f7f7f9;
   }
   .mainNav ul li a:hover {
     color: #f1b104;
@@ -456,7 +458,8 @@ nav.sideNav a {
 nav.sideNav .fa-minus {
   font-size: 1rem;
   margin: 0;
-  color: rgba(0, 0, 0, 0.3);
+  color: #303238;
+  text-shadow: 1px 1px 2px #abaeb9;
 }
 
 nav.sideNav .fa-minus:hover {
@@ -464,25 +467,26 @@ nav.sideNav .fa-minus:hover {
 }
 
 h3.specialBig {
-  font-size: 2rem;
+  font-family: 'Damion', cursive;
+  margin: 0;
+  font-size: 2.5rem;
   padding: 34rem 0 0 0;
-  line-height: 1.5;
+  line-height: 2.4;
   font-weight: 300;
 }
 
 @media (max-width: 600px) {
   h3.specialBig {
-    margin: 0 0 3% 0;
     font-size: 2rem;
     letter-spacing: 0.3rem;
-    line-height: 1.7;
-    padding-top: 25rem;
+    padding-top: 20rem;
+    line-height: 1.5;
   }
 }
 
 @media (max-width: 480px) {
   h3.specialBig {
-    padding-top: 20rem;
+    padding-top: 15rem;
   }
 }
 
@@ -1060,40 +1064,12 @@ ul.social .fa:hover {
 
 img.blackLogo {
   float: left;
-  padding: 1rem 0;
+  padding: 2rem 0;
 }
 
-.secondaryNav {
-  float: right;
-  width: 35%;
-}
-
-.secondaryNav ul li {
-  margin-top: 0;
-  text-align: right;
-}
-
-.secondaryNav ul li a {
-  color: #515359;
-  margin-top: 0rem;
-  padding: 0 5px;
-}
-
-@media (max-width: 940px) {
-  .secondaryNav ul li {
-    text-align: center;
-  }
-}
-
-.secondaryNav ul .search .search2 {
-  color: #515359;
-  margin: 5px 0 0 20px;
-}
-
-@media (max-width: 940px) {
-  .secondaryNav ul .search {
-    display: none;
-  }
+.mainNav2 a {
+  color: #303238;
+  margin-bottom: 5px;
 }
 
 .title {

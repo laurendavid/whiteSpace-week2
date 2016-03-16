@@ -41,38 +41,15 @@
 
 img.blackLogo {
 	float: left;
-	padding: 1rem 0;
+	padding: 2rem 0;
 }
 
-// Secondary Nav Bar
-.secondaryNav {
-	float: right;
-	width: 35%;
-	ul {
-		li {
-			margin-top: 0;
-			text-align: right;
-			a {
-				color: $medGrey;
-				margin-top: 0rem;
-				padding: 0 5px;
-			}
-			@media (max-width: 940px) {
-				text-align: center;
-			}
-		}
-		.search {
-			.search2 {
-				color: $medGrey;
-				margin: 5px 0 0 20px;
-			}
-			@media (max-width: 940px) {
-				display: none;
-			}
-		}
+.mainNav2 {
+	a {
+		color: $greyBlack;
+		margin-bottom: 5px;
 	}
 }
-
 
 // Page title div
 .title {
