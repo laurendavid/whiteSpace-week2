@@ -963,7 +963,7 @@ ul.social {
   }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 480px) {
   ul.social {
     margin-left: 9%;
   }
@@ -971,7 +971,7 @@ ul.social {
 
 ul.social .fa {
   padding: 0.2rem;
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   line-height: 2;
   font-weight: 400;
 }
@@ -1065,6 +1065,7 @@ img.blackLogo {
 
 .secondaryNav {
   float: right;
+  width: 35%;
 }
 
 .secondaryNav ul li {
